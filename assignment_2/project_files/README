@@ -1,0 +1,5 @@
+makefile should compile the whole thing on linux properly through "make" command.  The "lsh" executable should be created, which can be ran to test.
+
+main.cpp is where the main() function is, and it holds a very simple testing sequence I used to test my algorithm.
+lsh_cluster.cpp is where all the clustering algorithms are
+lsh_search.cpp is where all the searching algorithm are

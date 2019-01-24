@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1537562154 source:/home/koinuri/Documents/class_work/data_mining/assignment_1/assignment_1/kdtree_search.cpp
+
+1537853389 source:/home/koinuri/Documents/class_work/data_mining/assignment_1/assignment_1/main.cpp
+	<iostream>
+	"kdtree_algorithm.h"
+
+1537852408 /home/koinuri/Documents/class_work/data_mining/assignment_1/assignment_1/kdtree_algorithm.h
+
+1537562154 source:/home/koinuri/Documents/class_work/data_mining/assignment_1/kdtree_search.cpp
+
+1537862258 source:/home/koinuri/Documents/class_work/data_mining/assignment_1/kdtree_clustering.cpp
+	<iostream>
+	<cmath>
+	"kdtree_algorithm.h"
+
+1537859521 /home/koinuri/Documents/class_work/data_mining/assignment_1/kdtree_algorithm.h
+
+1537861393 source:/home/koinuri/Documents/class_work/data_mining/assignment_1/main.cpp
+	<iostream>
+	"kdtree_algorithm.h"
+

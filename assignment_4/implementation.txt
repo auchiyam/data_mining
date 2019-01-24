@@ -1,0 +1,49 @@
+K-Mean Search algorithm implementation pseudocode
+
+int kmean_search(dim, ndata, data, k, cluster_start, cluster_size, cluster_radius, centroids, query_pt, result_pt):
+	# initialization
+	viable_cluster = [] 	# list of clusters that contains the query point
+	min_distance = -1	# keeps track of the distance between closest centroid and query_pt
+	min_cluster = -1	# keeps track of the closest centroid to query_pt
+
+	for i in range(0, k):
+		# find distance between centroid and query
+		distance = get_distance(centroids[i], query_pt)
+
+		# if the distance is smaller than the cluster radius, keep that cluster
+		if distance > cluster_radius[i]:
+			viable_clusters.push(i)
+
+		# keep track of the closest cluster on the side
+		if min_distance == -1 or distance < min_distance:
+			min_cluster = i
+			min_distance = distance
+
+	# if the query_pt didn't belong in any of the clusters, get the best approximate by using the closest centroid or cluster to the query_pt
+	if len(viable_clusters) == 0:			
+		viable_clusters.push(min_cluster)
+
+	min_distance = -1
+	min_point = -1
+
+	checked = 0
+
+	for i in viable_cluster:
+		# get all the points in viable clusters
+		for j in range(cluster_start[i], cluster_start[i]+cluster_size[j]):
+			# find the distance between query_pt and every point
+			pt = get_data(dim, data, j)
+
+			distance = get_distance(pt, query_pt)
+
+			# find the smallest distance
+			if min_distance == -1 || distance < min_distance:
+				min_distance = distance
+				min_point = pt
+
+			# since this point has been checked for distance, increase the check count by 1
+			checked++
+
+	result_pt = pt
+
+	return checked

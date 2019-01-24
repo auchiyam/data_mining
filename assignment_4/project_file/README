@@ -1,0 +1,1 @@
+makefile should compile the whole thing on linux through "make" command.  The "kmean" executable should be created, which can be ran to test.
